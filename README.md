@@ -75,7 +75,7 @@ To deploy CSP you need to include an HTTP response header called Content-Securit
 An example CSP is as follows: 
 default-src 'self'; script-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none';
 
-4. Implement WAF[Web Application Firewall]
-To protect your application, you can also implemet WAF. WAF ha
+4. **Implement WAF[Web Application Firewall]**
+To protect your application, you can also implemet WAF. WAF inspects each and every http requests against the XSS rules(Signatures) if any rule triggers WAF will block the malicious request.
 
 Please check the XSS.docx
