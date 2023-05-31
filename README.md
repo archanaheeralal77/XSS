@@ -75,4 +75,4 @@ To deploy CSP you need to include an HTTP response header called Content-Securit
 An example CSP is as follows: 
 default-src 'self'; script-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none';
 
-
+Please check the XSS.docx
