@@ -82,13 +82,22 @@ In a JavaScript string context, non-alphanumeric values should be Unicode-escape
 
 
 3.	**Mitigating XSS using content security policy (CSP)**
-Content security policy (CSP) is the last line of defence against cross-site scripting. 
-If your XSS prevention fails, you can use CSP to mitigate XSS by restricting what an attacker can do. 
-CSP lets you control various things, such as whether external scripts can be loaded and whether inline scripts will be executed. 
-To deploy CSP you need to include an HTTP response header called Content-Security-Policy with a value containing your policy. 
+  Content security policy (CSP) is the last line of defence against cross-site scripting. 
+  If your XSS prevention fails, you can use CSP to mitigate XSS by restricting what an attacker can do. 
+  CSP lets you control various things, such as whether external scripts can be loaded and whether inline scripts will be executed. 
+  To deploy CSP you need to include an HTTP response header called Content-Security-Policy with a value containing your policy. 
 
-An example CSP is as follows: 
-default-src 'self'; script-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none';
+  An example CSP is as follows: 
+ default-src 'self'; script-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none';
+ 
+ 4. Implement WAF: 
+    WAF can be implemented to protect your application from XSS attacks.
+    WAF is rules(Signatures), so when any HTTP requests triggers, WAF will inspect HTTP traffic against these XSS rules and if any request matches to any XSS rule 
+    then WAF will block the request [If WAF is under DENY/BLOCK/DETECTION etc mode]
+     read more about Mod Security CRS rules [ https://owasp.org/www-project-modsecurity-core-rule-set/ ]
+     
+     
+     
 
 
 
