@@ -70,9 +70,9 @@ This application is vulnerable to Stored XSS, the payload which we have injected
 2.	**Output Encoding:** ensure that all variable output in a page is encoded before it is returned to the user.
 In an HTML context, you should convert non-whitelisted values into HTML entities: 
 
- --> 	< converts to: **& lt;**
+ --> 	< converts to: **& lt;** [No space between & and lt]
  
- -->  converts to: **& gt;**
+ -->  converts to: **& gt;** [No space between & and gt]
 
 In a JavaScript string context, non-alphanumeric values should be Unicode-escaped: 
 
