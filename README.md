@@ -42,8 +42,8 @@ We have also injected the XSS payload in the URL as well and we see same result.
 
 <img width="335" alt="image" src="https://github.com/archanaheeralal77/XSS/assets/127080874/0fc7b7d9-7a43-4e08-89b3-da537b92bc6b">
 
-Code Scanning[SAST] : You can perform code scanning by using any good code scanner. 
-Code scanners: Checkmarx, Fortify etc.
+**Code Scanning[SAST] :** You can perform code scanning by using any good code scanner. 
+**Code scanners:** Checkmarx, Fortify etc.
 
 **Stored XSS:** An attacker uses Stored XSS to inject malicious payload, into the web application. When application is vulnerable to stored XSS, then the injected malicious code will be permanently stored by the target application, for example within a database or server. 
 For example, an attacker may enter a malicious script into a user input field such as a blog comment field or in a forum post of feedback section.
