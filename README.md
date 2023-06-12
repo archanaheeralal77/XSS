@@ -10,3 +10,15 @@ An attacker can use XSS to send a malicious script to an unsuspecting user. The 
 
 <img width="246" alt="image" src="https://github.com/archanaheeralal77/XSS/assets/127080874/4d6e016a-2b7b-4cc4-8ae6-8d30b1549b5a">
 
+
+Types of XSS:
+
+There are 3 types of XSS attacks, however we will only explain 2 types of XSS attacks
+ --> Reflected XSS
+ --> Stored XSS
+
+Reflected XSS: Reflected (Non-Persistent) XSS attacks occur when the malicious payload is included in the request sent to the vulnerable web application and is then reflected such that the server’s HTTP response consists of the payload. 
+
+Attackers leverage social engineering techniques such as phishing attacks to make the victim include the malicious script in their request to the webserver. The victim’s browser then executes the malicious script as the HTTP response.
+
+
