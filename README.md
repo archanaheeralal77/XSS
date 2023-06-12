@@ -80,7 +80,7 @@ To protect your application, you can also implemet WAF. WAF inspects each and ev
 
 Curl command to test XSS: we can use curl commands to test the XSS vulnerabilty, however it is a manual effort and we have to manually add the xss payloads in the curl command, we can also use the script which is also uploaded in this project, where we pick the multiple xss payloads from text file.
 
-**os.system("curl -svo /dev/null "http://localhost/dvwa//test?<script>alert("ArchanaTest")</script>"")**
+**curl -svo /dev/null "http://localhost/dvwa//test?<script>alert("ArchanaTest")</script>"**
  
 
 Please check the XSS.docx
