@@ -94,7 +94,8 @@ In a JavaScript string context, non-alphanumeric values should be Unicode-escape
     WAF can be implemented to protect your application from XSS attacks.
     WAF is rules(Signatures), so when any HTTP requests triggers, WAF will inspect HTTP traffic against these XSS rules and if any request matches to any XSS rule 
     then WAF will block the request [If WAF is under DENY/BLOCK/DETECTION etc mode]
-     read more about Mod Security CRS rules [ https://owasp.org/www-project-modsecurity-core-rule-set/ ]
+    
+    read more about Mod Security CRS rules [ https://owasp.org/www-project-modsecurity-core-rule-set/ ]
      
      
      
