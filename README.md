@@ -61,16 +61,22 @@ This application is vulnerable to Stored XSS, the payload which we have injected
 1.	**Input Validation:** To prevent XSS attacks, your application must validate all the input data, make sure that only the allowlisted data is allowed
 
  --> If a user submits a URL that will be returned in responses, validating that it starts with a safe protocol such as HTTP and HTTPS. Otherwise someone might exploit your site with a harmful protocol like javascript or data. 
+ 
  --> If a user supplies a value that it expected to be numeric, validating that the value actually contains an integer. 
+ 
  --> Validating that input contains only an expected set of characters.
  
  
 2.	**Output Encoding:** ensure that all variable output in a page is encoded before it is returned to the user.
 In an HTML context, you should convert non-whitelisted values into HTML entities: 
+
  --> 	< converts to: &lt; 
+ 
  --> converts to: &gt; 
 In a JavaScript string context, non-alphanumeric values should be Unicode-escaped: 
+
  --> 	< converts to: \u003c 
+ 
  --> converts to: \u003e 
 
 
